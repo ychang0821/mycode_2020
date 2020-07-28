@@ -30,3 +30,5 @@ animallist.extend(animallist2)
 animallist.extend(animallist3)
 print(animallist)
 print(animallist[0:13])
+for x in animallist:
+    print(x)
