@@ -42,3 +42,4 @@ elif farm == "SE Farm":
     animals_plants = farms[2]["agriculture"][0]
     for x in animals_plants:
         print(x, end='')
+    print("")
