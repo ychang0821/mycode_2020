@@ -7,6 +7,10 @@ animals = farms[0]["agriculture"]
 for x in animals:
     print(x)
 
+print("""
+1. NE Farm
+2. W Farm
+3. SE Farm""")
 #Medium
 farm = input("Choose a farm (NE Farm, W Farm, or SE Farm)")
 if farm == "NE Farm":
@@ -42,3 +46,4 @@ elif farm == "SE Farm":
     animals_plants = farms[2]["agriculture"][0]
     for x in animals_plants:
         print(x, end='')
+    print("")
