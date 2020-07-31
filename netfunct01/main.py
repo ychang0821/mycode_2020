@@ -9,7 +9,10 @@ def commandpush(devicecmd): # devicecmd==list
         for mycmds in devicecmd[coffeetime]:
             print('Attempting to sending command --> ' + mycmds )
             # we'll learn to write code that sends cmds to device here
-
+def devicereboot():
+    ips = ["10.1.0.1", "10.2.0.1", "10.3.0.1"]
+    for x in ips:
+        print("Connecting to.. " + x + " REBOOTING NOW!")
 # start our main script
 def main():
     work2do = {"10.1.0.1":["interface eth1/2", "no shutdown"], "10.2.0.1":
@@ -26,4 +29,4 @@ def main():
 
 # call our main function
 main()
-
+devicereboot()
